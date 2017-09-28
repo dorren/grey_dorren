@@ -1,3 +1,12 @@
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .Board {
   width: 400px;
   border: 1px solid #DDD;
@@ -38,6 +47,7 @@
   padding: 10px;
   min-height: 300px;
   background: #EAEDED;
+  overflow: hidden;
 }
 .Message {
   background: #fff;
@@ -46,11 +56,21 @@
   padding: 0 5px 5px 5px;
   margin-bottom: 1em;
 }
+.Message.Animated {
+  animation: slideInFromTop 1s ease-out 0s 1 normal both;
+}
 .Message .Heading{
   text-align: right;
+  height: 1.5em;
 }
 .Message .Heading .Delete{
   font-size: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.Message .Heading .Delete:hover{
+  font-size: 100%;
+
 }
 .Message .Body{
 }

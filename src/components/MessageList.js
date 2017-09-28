@@ -6,8 +6,10 @@ import React, { Component } from 'react';
 class MessageList extends Component {
   render() {
     let msgElems = (this.props.messages).map((x,i) => {
+      let css = i == 0 ? "Message Animated" : "Message";
+
        return (
-         <div className="Message" key={i}>
+         <div className={css} key={i}>
            <div className="Heading">
              <span className="Delete"
                onClick={()=>this.props.onDelete(i)}>&#x2573;</span>

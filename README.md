@@ -1,3 +1,3 @@
 ** demo
 
-see live demo [here](https://github.com/dorren/grey_dorren/)
+see live demo [here](https://dorren.github.io/grey_dorren/index.html)
