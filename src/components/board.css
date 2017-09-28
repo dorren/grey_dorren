@@ -1,0 +1,56 @@
+.Board {
+  width: 400px;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+  background: #FFF;
+  margin: auto;
+}
+
+.BoardInput {
+  background: #F4F6F6;
+}
+
+.BoardInput .Text {
+  display: flex;
+}
+.BoardInput .Text input {
+  flex-grow: 1;
+  font-size: 120%;
+}
+.BoardInput .Actions {
+   text-align: right;
+   padding: 5px;
+}
+.BoardInput .Actions .SendBtn {
+  border-radius: 15px;
+  border: 0;
+  background: #3498DB;
+  color: #FFF;
+  padding: 5px 10px;
+  margin: 5px;
+}
+.BoardInput .Actions .SendBtn:hover {
+  box-shadow: 3px 3px 10px #CCC;
+}
+
+.MessageList {
+  padding-top: 1em;
+  padding: 10px;
+  min-height: 300px;
+  background: #EAEDED;
+}
+.Message {
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #BBB;
+  padding: 0 5px 5px 5px;
+  margin-bottom: 1em;
+}
+.Message .Heading{
+  text-align: right;
+}
+.Message .Heading .Delete{
+  font-size: 50%;
+}
+.Message .Body{
+}
